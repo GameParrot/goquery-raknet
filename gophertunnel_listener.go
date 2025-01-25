@@ -10,7 +10,7 @@ import (
 	"github.com/sandertv/gophertunnel/minecraft"
 )
 
-func CreateGophertunnelListener(name string, queryServer *goquery.QueryServer) {
+func CreateGophertunnelNetwork(name string, queryServer *goquery.QueryServer) {
 	minecraft.RegisterNetwork(name, func(l *slog.Logger) minecraft.Network { return RakNetQuery{l: l, q: queryServer} })
 }
 
