@@ -1,4 +1,4 @@
-module goquery-raknet
+module github.com/gameparrot/goquery-raknet
 
 go 1.23.4
 
